@@ -1,0 +1,369 @@
+/* 热门导航 */
+.remennavitems {
+    margin: 3% auto;
+    max-width: 1100px;
+}
+
+.remennavitems ul {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remennavitems ul li {
+    float: left;
+    margin: 0 1%;
+}
+
+.remennavitems ul li a {
+    white-space: nowrap;
+    color: #333;
+}
+
+.remennavitems ul li img {
+    max-width: 20px;
+    vertical-align: middle;
+    margin-right: 3px;
+}
+
+
+/* 竖向导航 */
+.shuxiangnavitems {
+    display: flex;
+}
+
+.shuxiangnavleft {
+    background: #f9f9f9;
+    height: 336px;
+    width: 252px;
+    flex: 0 0 252px;
+    overflow: hidden;
+    font-size: 14px;
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.shuxiangnavleft:hover{
+    overflow: inherit;
+}
+.shuxiangnavleft ul{
+    position: absolute;
+    background: #f9f9f9;
+    z-index: 100;
+    width: 100%;
+    margin-left: 5px;
+}
+.shuxiangnavleft li {
+    height: 30px;
+    line-height: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.shuxiangnavleft li:hover{
+    background: #d9d9d9;
+}
+.shuxiangnavleft li a {
+    color: #333;
+}
+.shuxiangnavleft li a:hover{
+    color: red;
+}
+.shuxiangnavleft li img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+.shuxiangnavcenter {
+    margin: 0 10px;
+    flex: 1 1 60%;
+    box-sizing: border-box;
+}
+
+.shuxiangnavcentertop {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    margin-bottom: 16px;
+}
+
+.lunbotu-promo {
+    float: left;
+}
+
+.butie {
+    float: left;
+    background: #f9f9f9;
+    padding: 10px;
+    margin: 0 10px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    flex: 1 1 0%;
+    height: 160px;
+}
+
+.butie-top {
+    margin: 5px 0;
+    overflow: hidden;
+}
+
+.butie-top a {
+    color: #333;
+    font-size: 14px;
+}
+
+.butie-top p:first-child {
+    float: left;
+}
+
+.butie-top p:last-child {
+    float: right;
+    color: #ad7d4c;
+}
+
+.butie ul {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.butie ul li {
+    float: left;
+    margin: 1%;
+    flex: 1 1 25%;
+    box-sizing: border-box;
+    width: 23%;
+}
+
+.butie ul li a {
+    color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.butie ul li a span {
+    font-weight: bold;
+}
+
+.butie ul li a img {
+    max-width: 90px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.butie ul li a p {
+    white-space: nowrap;
+    font-size: 12px;
+}
+
+.shuxiangnavcenterbottom {
+    display: flex;
+}
+
+.paipaiershou ul li:nth-child(1) span {
+    margin: 1% 0;
+    font-size: 12px;
+    background: red;
+    color: white;
+    width: 100%;
+    display: block;
+    text-align: center;
+    border-radius: 8px 8px 0 0;
+    height: 20px;
+    line-height: 20px;
+}
+
+.paipaiershou ul li:nth-child(1)>div {
+    border-radius: 0 0 8px 8px;
+}
+
+.paipaiershou ul li:nth-child(1)>div a {
+    background: url(./../public/paipaiduihao.png) no-repeat white;
+    background-position: 10% center;
+    background-size: 10%;
+    margin: 1% 0;
+    line-height: 25px;
+    font-size: 12px;
+    color: #333;
+}
+
+.paipaiershou,
+.miaosha {
+    width: 35%;
+    flex: 1 1 35%;
+}
+
+.zhibo,
+.baoyou {
+    flex: 1 1 15%;
+    width: 15%;
+}
+.paipaiershou ul li img, .zhibo ul li a img, .miaosha ul li a img, .baoyou ul li a img{
+    width: 70%;
+    height: 90px;
+}
+
+.miaosha ul li span {
+    display: inline-block;
+}
+
+.miaosha ul li p {
+    display: inline-block;
+}
+
+.shuxiangnavdengru {
+    width: 252px;
+    flex: 0 0 252px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.dengru {
+    background: #fff7fa;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 9px;
+    height: 190px;
+}
+
+.dengru>div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    margin-bottom: 2%;
+}
+
+.dengru>div:nth-child(1) span {
+    font-weight: bold;
+}
+
+.dengru>div:nth-child(1) img {
+    width: 48px;
+    height: 48px;
+}
+
+.dengru>div:nth-child(2) {
+    background: url(./../public/mrhl.jpg) center top no-repeat;
+    background-size: 110% 60%;
+}
+
+.dengru div:nth-child(2)>div {
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    min-width: 0;
+    flex-wrap: nowrap;
+}
+
+.dengru div:nth-child(2)>div img {
+    width: 29%;
+    flex: 1;
+    margin: 2%;
+    background-color: transparent;
+}
+
+.dengru>div:nth-child(2) p {
+    background: red;
+    width: 100%;
+    padding: 4%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 1% 0;
+}
+.dengru>div:nth-child(2) p>a{
+    display: block;
+    color: white;
+}
+
+.pinpai {
+    background: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.pinpai>div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 0;
+    font-size: 14px;
+}
+
+.pinpai>div:nth-child(1)>div:nth-child(1) span {
+    color: white;
+    background: red;
+    margin-left: 5px;
+    padding: 2px;
+    font-size: 12px;
+}
+
+.pinpai>div:nth-child(2) {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.pinpai>div:nth-child(2) a {
+    text-align: center;
+    margin: 0 2%;
+    width: 23%;
+}
+
+.pinpai>div:nth-child(2) a p {
+    color: #ad7d4c;
+    font-size: 12px;
+}
+
+.pinpai>div:nth-child(2) a img {
+    width: 100%;
+}
+
+/* 热门导航2 */
+.remennavitems2 {
+    overflow: hidden;
+    max-width: 1600px;
+    width: 100%;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+}
+
+.remennavitems2 ul {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;/* 滚动时采用平滑过渡 */
+    scrollbar-width: none;/* 隐藏滚动条 */
+    margin: 0 40px;
+}
+.remennavitems2 ul::-webkit-scrollbar {
+    display: none; /* Chrome隐藏滚动条 */
+}
+.remennav2-prev,
+.remennav2-next {
+    background: #f9f9f9;
+    border: 1px solid #888888;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 5px 10px;
+    color: #333;
+    position: absolute;
+    top: 4px;
+    z-index: 10;
+    height: 20px;
+    line-height: 20px;
+    width: 10px;
+}
+
+.remennav2-prev {
+    left: 0;
+}
+
+.remennav2-next {
+    right: 1px;
+}
+.btn-hidden{
+    display: none;
+}
